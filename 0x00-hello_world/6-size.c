@@ -2,7 +2,7 @@
 
 /**
 * main - Entry point
-* Description:  Using printf
+* Description:  Prints characters sizes
 * Return: 0
 */
 
