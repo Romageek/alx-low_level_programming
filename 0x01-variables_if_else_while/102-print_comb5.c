@@ -21,7 +21,7 @@ int main(void)
 				m = 48;
 				while (m < 58)
 				{
-					if (i + j != k + m && (k + m) > (i + j))
+					if (k > i || (k >= i && (k + m) > (i + j)))
 					{
 					putchar(i);
 					putchar(j);
