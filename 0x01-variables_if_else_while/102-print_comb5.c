@@ -29,7 +29,7 @@ int main(void)
 					putchar(' ');
 					putchar(k);
 					putchar(m);
-					if (i + j + k + m != 227 || i != 58)
+					if (i + j + k + m != 227 && i != 58)
 					{
 					putchar(',');
 					putchar(' ');
