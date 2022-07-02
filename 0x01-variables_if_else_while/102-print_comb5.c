@@ -8,31 +8,34 @@
 
 int main(void)
 {
-	int i = 48, j = 48, k, m;
+	int i = 48, j, k, m;
 
 	while (i < 58)
 	{
+		j = 48;
 		while (j < 58)
 		{
 			k = 48;
-
 			while (k < 58)
 			{
 				m = 48;
-
 				while (m < 58)
 				{
-					if (i + j != k + m)
+					if (i + j != k + m && (k + m) > (i + j))
 					{
 					putchar(i);
 					putchar(j);
 					putchar(' ');
 					putchar(k);
 					putchar(m);
-					if (i + j + k + m != 227 && i != 58)
+					if (i + j + k + m == 227 && i == 57)
 					{
-					putchar(',');
-					putchar(' ');
+					break;
+					}
+					else
+					{
+						putchar(',');
+						putchar(' ');
 					}
 					}
 					m++;
