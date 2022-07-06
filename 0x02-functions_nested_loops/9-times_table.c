@@ -23,18 +23,21 @@ void times_table(void)
 				int k = res % 10;
 
 				res = res / 10;
+				_putchar(',');
 				_putchar(' ');
 				_putchar('0' + res);
 				_putchar('0' + k);
 			}
 			else
 			{
+				if (j != 0)
+				{
+				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
+				}
 				_putchar('0' + res);
 			}
-			if (j != 9)
-				_putchar(',');
 			j++;
 		}
 		i++;
