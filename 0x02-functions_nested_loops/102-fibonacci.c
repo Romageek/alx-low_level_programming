@@ -13,13 +13,13 @@ int main(void)
 
 	printf("1, 2, ");
 
-	while (i < 50)
+	while (i < 48)
 	{
 		printf("%ld", next);
 		t1 = t2;
 		t2 = next;
 		next = t1 + t2;
-		if (i != 49)
+		if (i != 47)
 			printf(", ");
 		i++;
 	}
