@@ -17,7 +17,10 @@ int main(void)
 			n = n / 2;
 			larg = div;
 		}
-		div = div + 2;
+		else
+		{
+			div = div + 2;
+		}
 	}
 	printf("%ld\n", larg);
 	return (0);
