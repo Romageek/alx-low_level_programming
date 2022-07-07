@@ -10,7 +10,7 @@ int main(void)
 {
 	long int n = 612852475143, div = 3, larg;
 
-	while (i < 782849)
+	while (div < 782849)
 	{
 		if (n % div == 0)
 		{
