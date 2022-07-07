@@ -7,7 +7,7 @@
 * @size: integer, size of square
 */
 
-void print_line(int n)
+void print_square(int n)
 {
 	int i, j;
 	
