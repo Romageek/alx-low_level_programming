@@ -8,16 +8,16 @@
 
 int main(void)
 {
-	long int n = 612852475143, div = 2, larg;
+	long int n = 612852475143, div = 3, larg;
 
-	while (n != 1)
+	while (i < 782849)
 	{
 		if (n % div == 0)
 		{
 			n = n / 2;
 			larg = div;
 		}
-		div++;
+		div = div + 2;
 	}
 	printf("%ld\n", larg);
 	return (0);
