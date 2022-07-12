@@ -31,8 +31,8 @@ int _atoi(char *s)
 				int c;
 
 				c = i - '0';
-				number = (number * 10) + c;
 				i++;
+				number = (number * 10) + c;
 			}
 			if (minus % 2 != 0)
 				number = -1 * number;
