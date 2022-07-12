@@ -28,6 +28,8 @@ int _atoi(char *s)
 
 			c = *(s + i) - '0';
 			number = (number * 10) + c;
+			if (*(s + i + 1) == ' ')
+				break;
 		}
 		i++;
 	}
