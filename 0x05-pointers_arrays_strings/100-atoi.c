@@ -20,25 +20,18 @@ int _atoi(char *s)
 		}
 		else if (*(s + i) == '-')
 		{
-			minus--;
+			minus++;
 		}
 		else if (*(s + i) >= '0' && *(s + i) <= '9')
 		{
-			number = i - '0';
-			i++;
-			while (*(s + i) >= '0' && *(s + i) <= '9')
-			{
-				int c;
+			int c;
 
-				c = i - '0';
-				i++;
-				number = (number * 10) + c;
-			}
-			if (minus % 2 != 0)
-				number = -1 * number;
-			return (number);
+			c = i - '0';
+			number = (number * 10) + c;
 		}
 		i++;
 	}
+	if (minus % 2 != 0)
+		number = -1 * number;
 	return (number);
 }
