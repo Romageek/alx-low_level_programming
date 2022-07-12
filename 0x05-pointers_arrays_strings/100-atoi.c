@@ -26,7 +26,7 @@ int _atoi(char *s)
 		{
 			int c;
 
-			c = i - '0';
+			c = *(s + i) - '0';
 			number = (number * 10) + c;
 		}
 		i++;
