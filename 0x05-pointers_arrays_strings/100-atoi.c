@@ -24,10 +24,13 @@ int _atoi(char *s)
 		}
 		else if (*(s + i) >= '0' && *(s + i) <= '9')
 		{
-			int c;
+			int c, j;
 
 			c = *(s + i) - '0';
 			number = (number * 10) + c;
+			j = i + 1;
+			if (*(s + i) >= '9')
+				break;
 		}
 		i++;
 	}
