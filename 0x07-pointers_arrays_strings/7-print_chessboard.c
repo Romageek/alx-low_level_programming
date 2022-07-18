@@ -1,9 +1,8 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * print_chessboard - prints the chessboard
  * @a: pointer to string
- *
  * Return: void
  */
 
