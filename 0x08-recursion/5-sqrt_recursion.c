@@ -1,19 +1,19 @@
 #include "main.h"
 
 /**
- * sqrt - square root recursively
+ * _sqrt - square root recursively
  * @n: number to calculate the sqaure root of
  * @x: checker
  * Return: square root
  */
 
-int sqrt(int n, int x)
+int _sqrt(int n, int x)
 {
 	if (x * x > n)
 		return (-1);
 	if (x * x == n)
 		return (x);
-	return (sqrt(n, x + 1));
+	return (_sqrt(n, x + 1));
 }
 
 /**
@@ -26,5 +26,5 @@ int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
-	return (sqrt(n, 0));
+	return (_sqrt(n, 0));
 }
