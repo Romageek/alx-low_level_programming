@@ -10,7 +10,7 @@
 
 int _pal(char *s, int x, int len)
 {
-	if (*(s + i) != *(s + len - 1))
+	if (*(s + x) != *(s + len - 1))
 		return (0);
 	if (x >= len)
 		return (1);
