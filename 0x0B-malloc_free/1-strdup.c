@@ -8,10 +8,11 @@
  * Return: pointer to the duplicated string if success,
  * NULL if insufficient memory was available
  */
+
 char *_strdup(char *str)
 {
 	char *copy;
-	unsigned int i, l;
+	unsigned int i, l = 0;
 
 	if (str == NULL)
 		return (NULL);
