@@ -1,4 +1,4 @@
-#include <stdlib.h>
+i#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -13,9 +13,9 @@ char *str_concat(char *s1, char *s2)
 	char *concat;
 	unsigned int i, j, l1 = 0, l2 = 0;
 
-	while (s1[l1] != '\0')
+	while (s1 != NULL && s1[l1] != '\0')
 		l1++;
-	while (s2[l2] != '\0')
+	while (s2 != NULL && s2[l2] != '\0')
 		l2++;
 
 	concat = malloc(sizeof(char) * (l1 + l2 + 1));
