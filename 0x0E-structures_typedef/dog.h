@@ -9,7 +9,6 @@
  *
  * Description: Dog's basic information
  */
-
 struct dog
 {
 	char *name;
